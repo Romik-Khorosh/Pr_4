@@ -4,16 +4,17 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Pr_4.Models;
 
-public partial class AppContext : DbContext
+public partial class PartnersContext : DbContext
 {
-    public AppContext()
-    {
-    }
+    
+    //public PartnersContext()
+    //{
+    //}
 
-    public AppContext(DbContextOptions<AppContext> options)
-        : base(options)
-    {
-    }
+    //public PartnersContext(DbContextOptions<PartnersContext> options)
+    //    : base(options)
+    //{
+    //}
 
     public virtual DbSet<Partner> Partners { get; set; }
 
